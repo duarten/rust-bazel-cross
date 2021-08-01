@@ -1,0 +1,11 @@
+load("//build:rust-musl.bzl", "rust_musl")
+
+rust_musl(
+    name = "example",
+    srcs = glob(["src/*.rs"]),
+    rustc_flags = [
+        "-C",
+        "target-cpu=haswell",
+    ],
+    visibility = ["//visibility:public"],
+)

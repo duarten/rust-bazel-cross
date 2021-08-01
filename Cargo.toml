@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "example",
+]
+
+[workspace.metadata.raze]
+workspace_path = "//cargo"
+genmode = "Remote"
+default_gen_buildrs = true
+experimental_api = true
+render_package_aliases = false
+targets = [
+    "x86_64-unknown-linux-musl",
+]
